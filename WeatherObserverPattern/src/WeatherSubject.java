@@ -22,9 +22,9 @@ public class WeatherSubject {
 	}
 	
 	//向所有注册观察者发布消息
-	protected void notifyObservers() {
+	protected void notifyObservers(String content) {
 		for(Observer observer:observers){
-			observer.update(this);
+			observer.update(content);
 		}
 	}
 

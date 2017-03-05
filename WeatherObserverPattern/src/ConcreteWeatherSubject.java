@@ -13,7 +13,7 @@ public class ConcreteWeatherSubject extends WeatherSubject {
 	public void setWeatherContent(String weatherContent) {
 		this.weatherContent = weatherContent;
 		//通知所有订阅了天气的观察者
-		this.notifyObservers();
+		this.notifyObservers(weatherContent);
 	}
 
 }

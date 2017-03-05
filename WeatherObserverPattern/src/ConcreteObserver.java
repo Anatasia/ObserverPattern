@@ -15,9 +15,10 @@ public class ConcreteObserver implements Observer {
 	 * 获取目标类的状态同步到观察者的状态中
 	 */
 	@Override
-	public void update(WeatherSubject subject) {
+	public void update(String content) {
 		// TODO Auto-generated method stub
-		weatherContent = ((ConcreteWeatherSubject)subject).getWeatherContent();
+		//weatherContent = ((ConcreteWeatherSubject)subject).getWeatherContent();
+		weatherContent = content;
 		System.out.println(observerName+"收到了"+weatherContent+","+remindThing);
 	}
 

@@ -8,5 +8,5 @@ public interface Observer {
 	 * 更新的接口
 	 * @param subject传入目标对象，方便获取相应的目标对象的状态
 	 */
-	public void update(WeatherSubject subject);
+	public void update(String content);
 }
